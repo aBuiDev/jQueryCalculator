@@ -21,22 +21,26 @@ let output = null;
 $numbers.on('click', (event) => {
     event.preventDefault();
 
-    if (operatorValue === '') {
-        if (numberAreaOneArray.length > 10) {
-            return
+    if (output === null) {
+        if (operatorValue === '') {
+            if (numberAreaOneArray.length > 10) {
+                return
+            } else {
+                numberAreaOneArray.push(event.target.value);
+            }
+            numberOne = numberAreaOneArray.join('')
+            $numberAreaOne.text(numberOne);
         } else {
-            numberAreaOneArray.push(event.target.value);
+            if (numberAreaTwoArray.length > 10) {
+                return
+            } else {
+                numberAreaTwoArray.push(event.target.value);
+            }
+            numberTwo = numberAreaTwoArray.join('')
+            $numberAreaTwo.text(numberTwo);
         }
-        numberOne = numberAreaOneArray.join('')
-        $numberAreaOne.text(numberOne);
     } else {
-        if (numberAreaTwoArray.length > 10) {
-            return
-        } else {
-            numberAreaTwoArray.push(event.target.value);
-        }
-        numberTwo = numberAreaTwoArray.join('')
-        $numberAreaTwo.text(numberTwo);
+        return;
     }
 });
 
