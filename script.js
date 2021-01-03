@@ -7,9 +7,9 @@ const $equal = $('.equal');
 const $clear = $('.clear');
 
 let numberAreaOneArray = [];
-let numberOne;
+let numberOne = null;
 let numberAreaTwoArray = [];
-let numberTwo;
+let numberTwo = null;
 let operatorValue = '';
 
 
@@ -49,7 +49,18 @@ $operators.on('click', (event) => {
 
 
 // Calculate Button
+$clear.on('click', (event) => {
+    event.preventDefault();
+    numberAreaOneArray = [];
+    numberOne = null;
+    numberAreaTwoArray = [];
+    numberTwo = null;
+    operatorValue = '';
+    $numberAreaOne.text(numberOne);
+    $numberAreaTwo.text(numberTwo);
+    $operatorArea.text(operatorValue);
 
+});
 
 
 
