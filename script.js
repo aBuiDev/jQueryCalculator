@@ -83,7 +83,7 @@ $equal.on('click', (event) => {
         divide();
     } else if (operatorValue === 'x') {
         multiply();
-    } else if (operatorValue === '**') {
+    } else if (operatorValue === '^') {
         square();
     } else if (operatorValue === '%') {
         percentage();
