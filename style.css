@@ -3,6 +3,10 @@
 /* font-family: 'Permanent Marker', cursive; */
 
 body {
+  background-image: url('/assets/images/woodBackground.jpg');
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
   width: 100%;
   height: 100vh;
   display: flex;
@@ -11,8 +15,8 @@ body {
 }
 
 .mainSection {
-  width: 1000px;
-  height: 800px;
+  width: 800px;
+  height: 1200px;
   background-image: url('./assets/images/paperBackground.jpg');
   background-position: center;
   background-size: cover;
@@ -21,6 +25,29 @@ body {
   flex-direction: column;
   justify-content: center;
   align-items: center;
+  position: relative;
+  box-shadow: 5px 10px 8px rgba(0, 0, 0, 0.5);
+}
+
+/* Title Section */
+.titleSection {
+  position: absolute;
+  top: 100px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
+.mainTitle {
+  font-family: 'Permanent Marker', cursive;
+  color: rgb(0, 97, 189);
+}
+
+.subTitle {
+  font-family: 'Permanent Marker', cursive;
+  font-size: 40px;
+  color: rgb(0, 97, 189);
 }
 
 /* Output Section */
@@ -31,11 +58,13 @@ body {
   display: flex;
   justify-content: center;
   align-items: center;
+  margin: 0px 0px 30px 0px;
 }
 
 .outputDisplay {
   font-family: 'Permanent Marker', cursive;
   font-size: 50px;
+  color: rgb(90, 90, 90);
 }
 
 /* Input Section */
@@ -44,21 +73,30 @@ body {
   height: 100px;
   display: flex;
   flex-direction: row;
-  justify-content: center;
+  justify-content: space-around;
   align-items: center;
+  margin: 0px 0px 50px 0px;
 }
 
 .inputDisplay {
   width: 100px;
   height: 100px;
   font-family: 'Permanent Marker', cursive;
-  font-size: 50px;
+  font-size: 30px;
   height: 50px;
-  color: rgb(0, 0, 0);
+  color: rgb(90, 90, 90);
   border-radius: 5px;
   display: flex;
   justify-content: center;
   align-items: center;
+}
+
+.controlsSection {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 0px 0px 200px 0px;
 }
 
 .numberButtons {
@@ -101,4 +139,15 @@ body {
 .button.equal,
 .button.clear {
   color: rgb(174, 0, 255);
+}
+
+.logoSection {
+  position: absolute;
+  bottom: 100px;
+  right: 100px;
+  transform: rotate(-15deg);
+}
+
+.aBuiDevsDrawnLogo {
+  width: 200px;
 }
