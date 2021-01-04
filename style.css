@@ -3,7 +3,7 @@
 /* font-family: 'Permanent Marker', cursive; */
 
 body {
-  background-image: url('/assets/images/woodBackground.jpg');
+  background-image: url('./assets/images/woodBackground.jpg');
   background-position: center;
   background-size: cover;
   background-repeat: no-repeat;
