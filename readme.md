@@ -1,5 +1,5 @@
 # aBuiDev's jQuery Calculator
 
-Coded from scratching using HTML, CSS, JavaScript and jQuery
+Coded from scratch using HTML, CSS, JavaScript and jQuery
 
 ![img](./assets/images/jQueryCalculatorScreenshot.jpg)
