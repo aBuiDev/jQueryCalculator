@@ -1,5 +1,7 @@
 # aBuiDev's jQuery Calculator
 
-Coded from scratch using HTML, CSS, JavaScript and jQuery
+<br>
+
+[Deployed App](https://abuidev.github.io/jQueryCalculator/)
 
 ![img](./assets/images/jQueryCalculatorScreenshot.jpg)
